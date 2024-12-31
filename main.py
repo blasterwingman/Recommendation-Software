@@ -23,12 +23,19 @@ def get_choice(name):
     for i in rest_data.types:
         if i[0] == chosen:
             chosen_list.append(i)
-        else:
-            print("Sorry, we do not have any restaurants that serve that type of cuisine. Please try again.")
-            get_choice(name)
-    print(f"The following cuisines are available of your choice: ", chosen_list, f"\nWhich one would you like to choose {name}?\n")
-    choice = input().lower()
-    get_restaurants(choice)
+
+    if (len(chosen_list)) == 1:
+        print("We only have one type of cuisine that serves {0}. Here is the list of restaurants that serve that type of cuisine:".format(chosen_list))
+        get_restaurants(chosen_list[0])
+    else:
+        print(f"The following cuisines are available of your choice: ", chosen_list, f"\nWhich one would you like to choose {name}?, Enter the first 2 letters from the given list.\n")
+        choice = input().lower()
+        for i in chosen_list:
+            if choice == i[0:2]:
+                get_restaurants(i)
+            else:
+                print("Sorry, we do not have any restaurants that serve that type of cuisine. Please try again.")
+                get_choice(name)
 
 # Main function
 
