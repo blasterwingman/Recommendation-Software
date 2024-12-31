@@ -1,4 +1,4 @@
-Restaurant Recommendation Service
+**Restaurant Recommendation Service**
 
 Overview
 
@@ -30,7 +30,7 @@ How to Run
 
 [cuisine_type, restaurant_name, expense_level, rating, address]
 
-Example:
+**Example:**
 
 rest_data.restaurant_data = [
     ["Indian", "Spice Hub", 2, 4.5, "123 Main Street"],
@@ -40,7 +40,7 @@ rest_data.restaurant_data = [
 
 	2.	Run the script in a Python environment:
 
-python3 main.py
+**python3 main.py**
 
 
 	3.	Follow the on-screen instructions to:
@@ -49,7 +49,7 @@ python3 main.py
 	•	View restaurant recommendations.
 	4.	Continue exploring different cuisines or exit the service as desired.
 
-Code Structure
+**Code Structure**
 	1.	get_restaurants(choice):
 	•	Displays the list of restaurants for the selected cuisine.
 	•	Prompts the user to explore another cuisine or exit.
@@ -61,14 +61,14 @@ Code Structure
 	•	Greets the user.
 	•	Initiates the get_choice() function to start the selection process.
 
-Sample Interaction
+**Sample Interaction**
 
 Input:
 
 Please state your name to get started: John
 Please enter the first letter of the type of cuisine you would like to eat, John: I
 
-Output:
+**Output:**
 
 The following cuisines are available based on your choice: Indian, Italian
 Which one would you like to choose, John? Enter the exact name from the list: Indian
@@ -80,7 +80,7 @@ Rating: 4.5
 Address: 123 Main Street
 Would you like to look at another type of cuisine? (yes or no)
 
-Enhancements
+**Enhancements**
 
 This program can be extended with additional features:
 	•	Support for filtering based on expense level or rating.
